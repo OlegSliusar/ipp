@@ -1,3 +1,4 @@
 # ipp
-IMPRACTICAL PYTHON PROJECTS
-Funny Ukrainian pseudonyms
+##IMPRACTICAL PYTHON PROJECTS
+
+###Funny Ukrainian pseudonyms
