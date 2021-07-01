@@ -6,30 +6,31 @@ import random
 
 
 def main():
-        """Execute the main function."""
-        print("Ласкаво просимо в 'Підбір псевдоніма для Івана'\n")
-        print("Псевдонім Івана буде:\n\n")
+    """Execute the main function."""
+    print("Ласкаво просимо в 'Підбір псевдоніма для Івана'\n")
+    print("Псевдонім Івана буде:\n\n")
 
-        first = ('Геть', 'Проб', 'Міто', 'Тутан', 'Найшлях', 'Дуд', 'Пуц',
-                'Провин', 'Недалек', 'Близ', 'Травкен', 'Перемут')
+    first = ('Геть', 'Проб', 'Міто', 'Тутан', 'Найшлях', 'Дуд', 'Пуц',
+            'Провин', 'Недалек', 'Близ', 'Травкен', 'Перемут')
 
-        last = ('Куцько', 'Додько', 'Паликрай', 'Мітко', 'Забирайко',
-                'Недавайко', 'Посилайко', 'Важницький', 'Тамєбік', 'Грішко',
-                'Наливайко', 'Шмальницький', 'Конопляник', 'Дідок')
+    last = ('Куцько', 'Додько', 'Паликрай', 'Мітко', 'Забирайко',
+            'Недавайко', 'Посилайко', 'Важницький', 'Тамєбік', 'Грішко',
+            'Наливайко', 'Шмальницький', 'Конопляник', 'Дідок')
 
-        while True:
-                firstName = random.choice(first)
+    while True:
+        first_name = random.choice(first)
 
-                lastName = random.choice(last)
+        last_name = random.choice(last)
 
-                print("\n\n")
-                print("{} {}".format(firstName, lastName), file=sys.stderr)
-                print("\n\n")
-                try_again = input("\n\nСпробуєш ще? (Натисни Enter або n, щоб вийти)\n")
-                if try_again.lower() == "n":
-                        break
+        print("\n\n")
+        print("{} {}".format(first_name, last_name), file=sys.stderr)
+        print("\n\n")
+        print("\n\nСпробуєш ще? (Натисни Enter або n, щоб вийти)\n")
+        try_again = input()
+        if try_again.lower() == "n":
+            break
 
-        input("\nНажміть Enter для завершення роботи.")
+    input("\nНажміть Enter для завершення роботи.")
 
 if __name__ == "__main__":
-        main()
+    main()
