@@ -1,4 +1,4 @@
-"""This script pickes up a random funny Ukrainian pseudonym"""
+"""This script pickes up a random funny Ukrainian pseudonym."""
 
 
 import sys
@@ -6,6 +6,7 @@ import random
 
 
 def main():
+        """Execute the main function."""
         print("Ласкаво просимо в 'Підбір псевдоніма для Івана'\n")
         print("Псевдонім Івана буде:\n\n")
 
