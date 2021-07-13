@@ -10,20 +10,29 @@ def main():
     print("Ласкаво просимо в 'Підбір псевдоніма для Івана'\n")
     print("Псевдонім Івана буде:\n\n")
 
-    first = ('Геть', 'Проб', 'Міто', 'Тутан', 'Найшлях', 'Дуд', 'Пуц',
+    first_name = ('Геть', 'Проб', 'Міто', 'Тутан', 'Найшлях', 'Дуд', 'Пуц',
             'Провин', 'Недалек', 'Близ', 'Травкен', 'Перемут')
 
-    last = ('Куцько', 'Додько', 'Паликрай', 'Мітко', 'Забирайко',
+    last_name = ('Куцько', 'Додько', 'Паликрай', 'Мітко', 'Забирайко',
             'Недавайко', 'Посилайко', 'Важницький', 'Тамєбік', 'Грішко',
             'Наливайко', 'Шмальницький', 'Конопляник', 'Дідок')
 
-    while True:
-        first_name = random.choice(first)
+    family_name = ('Гетьковович', 'Пробовович', 'Мітовович', 'Тутановович', 'Найшляховович', 'Дудовович', 'Пуцовович',
+                    'Провинович', 'Недалекович', 'Близович', 'Травенович', 'Перемутович')
 
-        last_name = random.choice(last)
+    while True:
+        first_n = random.choice(first_name)
+        last_n = random.choice(last_name)
+        family_n = False
+        if random.randrange(1, 4) == 1:
+            family_n = random.choice(family_name)
 
         print("\n\n")
-        print("{} {}".format(first_name, last_name), file=sys.stderr)
+        if family_n:
+            print("{} {} {}".format(first_n, last_n, family_n), file=sys.stderr)
+        else:
+            print("{} {}".format(first_n, last_n), file=sys.stderr)
+
         print("\n\n")
         print("\n\nСпробуєш ще? (Натисни Enter або n, щоб вийти)\n")
         try_again = input()
